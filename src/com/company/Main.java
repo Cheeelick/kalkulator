@@ -98,12 +98,12 @@ class CalculatorPanel extends JPanel {
             }
         }
     }
-    public void calculate(BigDecimal x) {
-        if (lastCommand.equals("+")) result = result.add(x);
-        else if (lastCommand.equals("-")) result = result.subtract(x);
-        else if (lastCommand.equals("*")) result = result.multiply(x);
-        else if (lastCommand.equals("/")) result = result.divide(x);
-        else if (lastCommand.equals("=")) result = x;
+    public void calculate(BigDecimal x1) {
+        if (lastCommand.equals("+")) result = result.add(x1);
+        else if (lastCommand.equals("-")) result = result.subtract(x1);
+        else if (lastCommand.equals("*")) result = result.multiply(x1);
+        else if (lastCommand.equals("/")) result = result.divide(x1);
+        else if (lastCommand.equals("=")) result = x1;
         if (result.compareTo(BigDecimal.ZERO) == 0) {
             result = BigDecimal.ZERO;
         }
